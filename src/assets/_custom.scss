@@ -1,0 +1,17 @@
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .line-height-small {
+    padding-top: 0.2em;
+    line-height: 1em;
+  }
+
+@media print {
+  .bg-dark {
+    -webkit-print-color-adjust: exact !important; /*Chrome, Safari */
+    color-adjust: exact !important; /*Firefox*/
+  }
+}

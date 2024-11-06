@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <nav>
+      <router-link :to="{ name: 'home' }">Home</router-link>
+      <router-link :to="{ name: 'record-view', params: { id: 'WcnFi2Iln8IxUUqtCzi2' } }"
+        >Test</router-link
+      >
+    </nav>
   </main>
 </template>
