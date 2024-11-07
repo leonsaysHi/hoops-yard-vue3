@@ -1,6 +1,5 @@
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
-import { getAnalytics, logEvent } from 'firebase/analytics'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDIrWiQ2GApX8WM7jV8mdLjkdiMuIBUIhA',
@@ -13,11 +12,16 @@ const firebaseConfig = {
   measurementId: 'G-N9CPVZ8GCG'
 }
 
+// Admin emails
+export const admins = [
+  'leon.ronssin@gmail.com',
+  'hoopsyard507@gmail.com',
+  'unitybasketball507@gmail.com',
+  'managerhoopsyard@gmail.com'
+]
+// Team emails
+export const teams = ['teamhoopsyard@gmail.com']
+
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig)
 export const auth = getAuth()
-const analytics = getAnalytics(app)
-
-export const logEv = (name: string, params = undefined) => {
-  logEvent(analytics, name, params)
-}

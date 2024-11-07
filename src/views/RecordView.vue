@@ -130,8 +130,6 @@ onMounted(() => {
   }
 })
 
-
-
 watch(
   isProductsReady,
   (isReady) => {

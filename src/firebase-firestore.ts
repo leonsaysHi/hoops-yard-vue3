@@ -18,14 +18,6 @@ import { recordConverter } from '@/utils/record-converter'
 import { productConverter } from '@/utils/product-converter'
 import type { Product, ProductDoc, RecordItem } from './types'
 
-// Admin email
-export const admins = [
-  'leon.ronssin@gmail.com',
-  'hoopsyard507@gmail.com',
-  'unitybasketball507@gmail.com',
-  'managerhoopsyard@gmail.com'
-]
-export const teams = ['teamhoopsyard@gmail.com']
 
 // Initialize Firestore
 export const db = getFirestore(app)
